@@ -1,0 +1,118 @@
+:root{
+    --cor-de-fundo:#222;
+    --cor-de-fundo-link:#181818;
+    --cor-do-texto-link:#ffffff;
+    --filtro-interruptor: grayscale(1) opacity(0.25);
+}
+.tema-claro{
+    --cor-de-fundo:#5b49e8;
+    --cor-de-fundo-link:#ffffff;
+    --cor-do-texto-link:#5b49e8;
+    --filtro-interruptor: grayscale(0) opacity(1);
+}
+*{
+    margin: 0;
+    padding: 0;
+    touch-action: manipulation; 
+    
+}
+.secao-principal{
+    max-width: 500px;
+        margin: 0 auto;
+}
+body{
+   
+    background: var(--cor-de-fundo);
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Barlow', sans-serif;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.topo{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top_interruptor{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border-radius: 100%;
+    border: none;
+    background: #fff;
+    height: 50px;
+    width: 50px;
+    filter: var(--filtro-interruptor);
+    cursor: pointer;
+}
+.top-lampada{
+    width: 50px;
+}
+
+.topo__foto_perfil{
+    width: 100px;
+    border: 4px solid #fff;
+    border-radius: 100%;
+    margin-top: 60px;
+}
+.topo__nome{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+
+}
+.topo__profisao{
+    margin-top: 4px;
+    color: #fff;
+}
+
+
+.Links{
+   
+    margin: 30px 30px 0 30px;
+    position: relative;
+}
+.links__link{
+    display: flex;
+    background: var(--cor-de-fundo-link);
+    margin-bottom: 15px;
+    height: 52px;
+    color: var( --cor-do-texto-link);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    border-radius: 8px;
+    box-shadow: 0 3px #000 ;
+    transition: 0.3s;
+}
+.links__icons{
+    position: absolute;
+    left: 19px;
+    font-size: 22px;
+    
+}
+
+.links__link:hover{
+    filter: brightness(0.75);
+}
+
+
+.rodape{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 15px;
+}
+.rodape__convite{
+    font-weight: bold;
+    margin-top: 4px;
+}
+.rodape__icon{
+    margin-top:10px;
+    font-size: 30px;
+}
